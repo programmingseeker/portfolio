@@ -1,3 +1,9 @@
+$primary: #d6e1ef;
+$pink: #e94560;
+
+.text-pink {
+  color: $pink;
+}
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -595,3 +601,8 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+@import "./../stylesheet/header";
+@import "./../stylesheet/home";
+
+@import "bootstrap/scss/bootstrap";

@@ -1,0 +1,23 @@
+body {
+  background: url(../images/background-home.png);
+}
+.banner {
+  position: absolute;
+  left: 14.67%;
+  right: 49.78%;
+  top: 34.02%;
+  bottom: 48.03%;
+  .banner-text {
+    color: #fafafa;
+    display: flex;
+    flex-direction: row;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 100px;
+    /* or 104% */
+
+    letter-spacing: -6px;
+  }
+}
