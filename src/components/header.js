@@ -19,10 +19,10 @@ function Header({ siteTitle }) {
             Services
           </Link>
           <Link to="/about" className="nav-link ">
-            about
+            About
           </Link>
           <Link to="/contact" className="nav-link ">
-            contact
+            Contact
           </Link>
         </div>
       </header>
