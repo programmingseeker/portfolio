@@ -31,11 +31,11 @@ function home() {
         <div className="row banner ">
           <div className="col-lg-6 col-md-6 col-sm-12 banner-text-div">
             <h1 className="banner-text">
-              <span className="text-pink mr-1">We</span> Design
+              <span className="text-pink mr-1">We</span>Design
             </h1>
             {"\n"}
             <h1 className="banner-text">
-              We <span className="text-pink ml-1">Create</span>
+              We<span className="text-pink ml-1">Create</span>
             </h1>
           </div>
 
