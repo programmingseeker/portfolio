@@ -1,6 +1,11 @@
 $font-size-home: 70px;
-body {
+.home {
   background: url(../images/background-home.png);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  color: white !important;
+  width: 100%;
 }
 .banner {
   display: grid;

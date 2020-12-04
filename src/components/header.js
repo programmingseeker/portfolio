@@ -14,6 +14,9 @@ function Header({ siteTitle }) {
           <span>{siteTitle}</span>
         </Link>
         <div className="header">
+          <Link to="/" className={`nav-link ${path === "/" ? "active" : ""}`}>
+            Home
+          </Link>
           <Link
             to="/works"
             className={`nav-link ${path === "/works" ? "active" : ""}`}

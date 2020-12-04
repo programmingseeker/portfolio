@@ -5,7 +5,7 @@ function works() {
   return (
     <>
       <Layout />
-      <div>Cakeop</div>
+      <div class="work">Cakeop</div>
     </>
   )
 }
