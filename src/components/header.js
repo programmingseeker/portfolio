@@ -1,31 +1,45 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useState } from "react"
 import Logo from "../images/logo.inline.svg"
-
+import { useLocation } from "@reach/router"
 function Header({ siteTitle }) {
+  const location = useLocation()
+  const path = location.pathname ? location.pathname : ""
   return (
     <>
-      <header>
+      <nav>
+        <Link to="/" className="title-link ">
+          <Logo className="logo" />
+          <span>{siteTitle}</span>
+        </Link>
         <div className="header">
-          <Link to="/" className="title-link ">
-            <Logo className="mb-3" />
-            {siteTitle}
-          </Link>
-          <Link to="/work" className="nav-link ">
+          <Link
+            to="/works"
+            className={`nav-link ${path === "/works" ? "active" : ""}`}
+          >
             Work
           </Link>
-          <Link to="/services" className="nav-link ">
+          <Link
+            to="/services"
+            className={`nav-link ${path === "/services" ? "active" : ""}`}
+          >
             Services
           </Link>
-          <Link to="/about" className="nav-link ">
+          <Link
+            to="/about"
+            className={`nav-link ${path === "/about" ? "active" : ""}`}
+          >
             About
           </Link>
-          <Link to="/contact" className="nav-link ">
+          <Link
+            to="/contact"
+            className={`nav-link ${path === "/contact" ? "active" : ""}`}
+          >
             Contact
           </Link>
         </div>
-      </header>
+      </nav>
     </>
   )
 }
