@@ -2,13 +2,14 @@ import React from "react"
 import Layout from "../components/layout"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import Icon from "../images/cakeop.inline.svg"
 function works() {
   const Image = () => {
     const data = useStaticQuery(graphql`
       query {
         placeholderImage: file(relativePath: { eq: "cakeop-landing.png" }) {
           childImageSharp {
-            fixed(width: 358, height: 200) {
+            fixed(width: 715, height: 400) {
               ...GatsbyImageSharpFixed
             }
           }
@@ -32,13 +33,17 @@ function works() {
         <div class="container">
           <div class="cards">
             <div class="card-item">
-              <Image class="card-image"></Image>
+              <div className="card-image-container">
+                <Image class="card-image"></Image>
+              </div>
               <div class="card-info">
-                <h2 class="card-title">Exploring around</h2>
-                <p class="card-intro text-dark">
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                </p>
+                <div class="card-title">
+                  <div className="card-title-icon-cover">
+                    <Icon class="card-title-icon" />
+                  </div>
+                  <h2 className="card-title-text">Cakeop</h2>
+                </div>
+                <div class="card-button "></div>
               </div>
             </div>
           </div>

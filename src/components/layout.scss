@@ -1,5 +1,6 @@
 $primary: #d6e1ef;
 $pink: #e94560;
+$primary-dark: #1a1a2e;
 
 .text-pink {
   color: $pink;
@@ -10,6 +11,7 @@ html {
   font: "poppins", serif, sans-serif;
   box-sizing: border-box;
   overflow-y: hidden;
+  background: $primary-dark;
 }
 body {
   margin: 0;
