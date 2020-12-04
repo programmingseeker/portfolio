@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react"
 import Logo from "../images/logo.inline.svg"
 import { useLocation } from "@reach/router"
 function Header({ siteTitle }) {
-  const [width, setWidth] = useState(null)
+  const [width, setWidth] = useState(window.innerWidth)
   const location = useLocation()
   const path = location.pathname ? location.pathname : ""
   useEffect(() => {

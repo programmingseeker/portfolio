@@ -19,11 +19,6 @@
     padding-left: 13px;
   }
 }
-// .nav {
-//   visibility: hidden;
-//   overflow: hidden;
-//   z-index: 0;
-// }
 .header {
   display: flex;
   flex-direction: row;
@@ -80,87 +75,82 @@
   }
 }
 
-// //Desktop Tablet view
-// @media (min-width: 768px) {
-//   .nav {
-//     display: flex;
-//     flex-direction: column;
-//     font-family: "poppins", sans-serif;
-//     color: var(--primary);
-//     text-decoration: "none";
-//     position: absolute;
-//     z-index: 10;
-//     left: 2.49%;
-//     top: 4.17%;
-//     bottom: 4.04%;
-//     width: 75px;
-//     background: linear-gradient(210.55deg, #28283f -3.02%, #1a1a2e 93.08%);
-//     box-shadow: 36px 12px 64px rgba(20, 20, 35, 0.7),
-//       -12px -20px 56px rgba(232, 237, 243, 0.05),
-//       inset -16px -6px 80px rgba(248, 249, 249, 0.03);
-//     border-radius: 24px;
-//     .title-link {
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: center;
-//       top: 1rem;
-//       font-style: normal;
-//       font-weight: 800;
-//       font-size: 14px;
-//       &:hover {
-//         text-emphasis: none;
-//         text-decoration: none;
-//       }
-//       span {
-//         padding: 10px 0px;
-//       }
-//     }
-//     .header {
-//       display: inline;
-//       position: static;
-//       box-shadow: none;
-//       background: transparent;
-//       .nav-link {
-//         display: flex;
-//         justify-content: center;
-//         position: relative;
-//         margin: 1.5rem 0rem;
-//         padding: 0.7rem 0rem !important;
-//         font-family: "poppins";
-//         font-style: normal;
-//         font-weight: 600;
-//         font-size: 13px;
-//         line-height: 12px;
-//         letter-spacing: 0.04em;
-//         transition: 0.3s;
-//         &:after {
-//           content: "";
-//           display: block;
-//           width: 0;
-//           height: 2px;
-//           background: linear-gradient(89.94deg, #0077b6 -0.03%, #00b4d8 99.9%);
-//           transition: width 0.3s;
-//           border-radius: 5px;
-//           position: absolute;
-//           bottom: 0;
-//         }
-//         &:hover,
-//         &:focus,
-//         &.active {
-//           color: var(--primary);
-//           text-shadow: 0 0 5px var(--primary);
-//         }
-//         &:hover::after,
-//         &:focus::after,
-//         &.active::after {
-//           margin: 0px, 5px;
-//           width: 70%;
-//           transition: width 0.3s;
-//         }
-//       }
-//     }
-//   }
-// }
+//Desktop Tablet view
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "poppins", sans-serif;
+    color: var(--primary);
+    position: absolute;
+    z-index: 10;
+    left: 2.49%;
+    top: 4.17%;
+    bottom: 4.04%;
+    width: 75px;
+    background: linear-gradient(210.55deg, #28283f -3.02%, #1a1a2e 93.08%);
+    box-shadow: 36px 12px 64px rgba(20, 20, 35, 0.7),
+      -12px -20px 56px rgba(232, 237, 243, 0.05),
+      inset -16px -6px 80px rgba(248, 249, 249, 0.03);
+    border-radius: 24px;
+    .title-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      top: 1rem;
+      margin-bottom: 1rem;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 14px;
+      &:hover {
+        text-emphasis: none;
+        text-decoration: none;
+      }
+      span {
+        padding: 10px 0px;
+      }
+    }
+    .nav-link {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      margin: 0.8rem 0rem;
+      padding: 0.7rem 0rem !important;
+      font-family: "poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 12px;
+      letter-spacing: 0.04em;
+      transition: 0.3s;
+      &:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(89.94deg, #0077b6 -0.03%, #00b4d8 99.9%);
+        transition: width 0.3s;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+      }
+      &:hover,
+      &:focus,
+      &.active {
+        color: var(--primary);
+        text-shadow: 0 0 5px var(--primary);
+      }
+      &:hover::after,
+      &:focus::after,
+      &.active::after {
+        margin: 0px, 5px;
+        width: 100%;
+        transition: width 0.3s;
+      }
+    }
+  }
+}
 
 // //Extra small
 // @media (max-width: 365px) {
