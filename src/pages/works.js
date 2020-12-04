@@ -43,7 +43,9 @@ function works() {
                     </div>
                     <h2 className="card-title-text">Cakeop</h2>
                   </div>
-                  <div class="card-button "></div>
+                  <div class="card-button ">
+                    <h3 class="card-btn-txt">Go to the site</h3>
+                  </div>
                 </div>
               </div>
             </div>

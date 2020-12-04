@@ -3,7 +3,7 @@ $font-size: 70px;
   background: url(../images/background-home.png);
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  height: 93vh;
   color: white !important;
   width: 100%;
   position: absolute;
@@ -11,11 +11,8 @@ $font-size: 70px;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-.container {
-  margin-top: 3rem;
-}
 .banner {
-  margin-top: 0.5rem;
+  margin-top: 5.5rem;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -27,7 +24,6 @@ $font-size: 70px;
     justify-content: center;
   }
   .banner-text {
-    font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
     font-size: $font-size - 8;
@@ -79,6 +75,7 @@ $font-size: 70px;
   }
   .banner {
     margin-left: 0px;
+    margin-top: 0rem;
     .banner-text {
       font-weight: 600;
       font-size: $font-size + 21 !important;
