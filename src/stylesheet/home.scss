@@ -1,28 +1,109 @@
-$font-size-home: 70px;
-.back-home {
+$font-size: 70px;
+.bg-home {
   background: url(../images/background-home.png);
   background-size: cover;
-  background-position: right center;
+  background-position: center center;
   height: 100vh;
   color: white !important;
   width: 100%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.container {
+  margin-top: 3rem;
 }
 .banner {
-  flex-direction: column;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: 4.67%;
-  margin-top: 50.54%;
-  .banner-text {
-    color: #fafafa;
+  flex-wrap: wrap;
+  color: #fafafa;
+  .banner-text-div {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    vertical-align: middle;
+  }
+  .banner-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
-    font-size: $font-size-home;
-    line-height: 55px;
+    font-size: $font-size - 8;
+    line-height: 65px;
     /* or 104% */
+    letter-spacing: -2.5px;
+  }
+  .macbook-div {
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+  }
+  .macbook {
+    width: 100%;
+    height: 280px;
+  }
+}
+
+@media (min-width: 768px) and(max-width: 1037px) {
+  .banner {
+    margin-top: 4rem;
+    .banner-text {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      font-size: $font-size !important;
+      line-height: 55px;
+      /* or 104% */
+      letter-spacing: -3px;
+    }
+    .macbook {
+      min-width: 20%;
+    }
+  }
+}
+
+@media (min-width: 1037px) {
+  .bg-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner {
+    margin-left: 0px;
+    .banner-text {
+      font-weight: 600;
+      font-size: $font-size + 21 !important;
+      line-height: 85px;
+      /* or 104% */
+      letter-spacing: -6px;
+    }
+    .macbook {
+      width: 100%;
+      height: 350px;
+    }
+  }
+}
+// Extra small
+@media (max-width: 325px) {
+  .banner-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: $font-size - 20 !important;
+    line-height: 45px !important;
+    /* or 104% */
+    letter-spacing: -2.5px;
+  }
+  .macbook {
+    width: 100%;
+    height: 180px;
   }
 }

@@ -6,7 +6,7 @@ import Home from "../components/home"
 
 const IndexPage = () => (
   <>
-    <div className="back-home">
+    <div className="bg-home">
       <Layout>
         <SEO title="DevStop" />
       </Layout>

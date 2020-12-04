@@ -1,8 +1,100 @@
-.work-back {
+.bg-work {
   background: url(../images/background-work.png);
   background-size: cover;
   background-position: center center;
   height: 100vh;
   color: white !important;
   width: 100%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.work-head {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: $font-size - 20;
+  line-height: 65px;
+  /* or 104% */
+  letter-spacing: -2.5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  -webkit-display: box;
+  -moz-display: box;
+  -ms-display: flexbox;
+  -webkit-display: flex;
+  padding: 0;
+  margin: 0;
+  // Cards
+
+  .cards {
+    display: flex;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    @media (min-width: 40rem) {
+      width: 80%;
+    }
+    @media (min-width: 56rem) {
+      width: 80%;
+    }
+
+    .card-item {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      height: 70vh;
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+      transition: transform 0.5s;
+      -webkit-transition: transform 0.5s;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.025);
+        -webkit-transform: scale(1.025);
+        .card-image {
+          opacity: 1;
+        }
+      }
+    }
+
+    // Content
+    .card-info {
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+      padding: 1rem;
+      line-height: 1.5em;
+    }
+
+    .card-title {
+      font-size: 25px;
+      line-height: 1.1em;
+      color: #32325d;
+      margin-bottom: 0.2em;
+    }
+
+    // Images
+    .card-image {
+      height: 300px;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 6px 6px 0px 0px;
+      opacity: 0.91;
+    }
+  }
 }

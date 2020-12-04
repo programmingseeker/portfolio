@@ -9,8 +9,6 @@ function Header({ siteTitle }) {
   const path = location.pathname ? location.pathname : ""
   useEffect(() => {
     if (typeof window === "undefined") return
-
-    console.log(width)
     const handleResize = () => setWidth(window.innerWidth)
     window.addEventListener("resize", handleResize)
     return () => {
@@ -28,9 +26,9 @@ function Header({ siteTitle }) {
   }
   return (
     <>
-      {width <= 768 ? <Title /> : ""}
+      {width <= 1037 ? <Title /> : ""}
       <div className="header">
-        {width >= 768 ? <Title /> : ""}
+        {width >= 1037 ? <Title /> : ""}
         <Link to="/" className={`nav-link ${path === "/" ? "active" : ""}`}>
           Home
         </Link>

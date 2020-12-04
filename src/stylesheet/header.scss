@@ -76,7 +76,7 @@
 }
 
 //Desktop Tablet view
-@media (min-width: 768px) {
+@media (min-width: 1037px) {
   .header {
     display: flex;
     flex-direction: column;
@@ -120,7 +120,7 @@
       font-family: "poppins";
       font-style: normal;
       font-weight: 600;
-      font-size: 13px;
+      font-size: 14px;
       line-height: 12px;
       letter-spacing: 0.04em;
       transition: 0.3s;
@@ -152,9 +152,31 @@
   }
 }
 
-// //Extra small
-// @media (max-width: 365px) {
-//   .nav-link {
-//     font-size: 13px !important;
-//   }
-// }
+@media (min-width: 768px) and (max-width: 1037px) {
+  .nav-link {
+    &:hover::after,
+    &:focus::after,
+    &.active::after {
+      margin: 0px, 5px;
+      width: 20% !important;
+      transition: width 0.3s;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .nav-link {
+    &:hover::after,
+    &:focus::after,
+    &.active::after {
+      margin: 0px, 5px;
+      width: 15% !important;
+      transition: width 0.3s;
+    }
+  }
+}
+//Extra small
+@media (max-width: 365px) {
+  .nav-link {
+    font-size: 13px !important;
+  }
+}
