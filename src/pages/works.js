@@ -4,8 +4,10 @@ import Layout from "../components/layout"
 function works() {
   return (
     <>
-      <Layout />
-      <div class="work">Cakeop</div>
+      <div className="work-back">
+        <Layout />
+        <div class="work">Cakeop</div>
+      </div>
     </>
   )
 }

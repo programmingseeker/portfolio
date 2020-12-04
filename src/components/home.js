@@ -27,14 +27,16 @@ function home() {
 
   return (
     <>
-      <div className="home">
-        <h1 className="banner-text ">
-          <span className="text-pink mr-1">We</span> Design
-        </h1>
-        {"\n"}
-        <h1 className="banner-text">
-          We <span className="text-pink ml-1">Create</span>
-        </h1>
+      <div className="container">
+        <div className="banner-text">
+          <h1>
+            <span className="text-pink mr-1">We</span> Design
+          </h1>
+          {"\n"}
+          <h1>
+            We <span className="text-pink ml-1">Create</span>
+          </h1>
+        </div>
         <Mac />
       </div>
     </>

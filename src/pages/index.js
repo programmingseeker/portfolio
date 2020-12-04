@@ -6,10 +6,12 @@ import Home from "../components/home"
 
 const IndexPage = () => (
   <>
-    <Layout>
-      <SEO title="DevStop" />
-    </Layout>
-    <Home />
+    <div className="back-home">
+      <Layout>
+        <SEO title="DevStop" />
+      </Layout>
+      <Home />
+    </div>
   </>
 )
 
