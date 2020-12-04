@@ -9,8 +9,8 @@ const IndexPage = () => (
     <div className="bg-home">
       <Layout>
         <SEO title="DevStop" />
+        <Home />
       </Layout>
-      <Home />
     </div>
   </>
 )

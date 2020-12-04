@@ -2,6 +2,10 @@ $primary: #d6e1ef;
 $pink: #e94560;
 $primary-dark: #1a1a2e;
 
+.primary-bg{
+  background-color: $primary-dark;
+}
+
 .text-pink {
   color: $pink;
 }
@@ -609,5 +613,6 @@ pre tt:after {
 @import "./../stylesheet/header";
 @import "./../stylesheet/home";
 @import "./../stylesheet/work";
+@import "./../stylesheet/services";
 
 @import "bootstrap/scss/bootstrap";
