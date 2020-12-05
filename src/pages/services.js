@@ -5,9 +5,9 @@ import Services from "../components/services"
 
 function services() {
   return (
-    <div className=" primary-bg">
+    <div className="primary-bg">
       <Layout>
-        <SEO title="DevStop" />
+        <SEO title="Services" />
         <Services />
       </Layout>
     </div>

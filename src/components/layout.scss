@@ -14,6 +14,10 @@ $primary-light: #28283f;
 .text-pink {
   color: $pink;
 }
+
+.text-primary {
+  color: $primary !important;
+}
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

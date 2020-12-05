@@ -2,52 +2,46 @@ import React from "react"
 import Illustrations from "../images/Illustrations.inline.svg"
 import Maintainence from "../images/Maintainance.inline.svg"
 import Responsive from "../images/responsive.inline.svg"
-import ServiceCard from "../components/servicesCard"
+import ServiceCard from "./servicesCard"
+import BlobRight from "../images/blobR.inline.svg"
+import BlobLeft from "../images/blobL.inline.svg"
 
 const services = () => {
   return (
-    <div className="container">
-      <div className="row mt-5 container">
-        <div className="col">
-          <h1 className="text-white">Services</h1>
-          <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            maiores aperiam voluptas velit sit accusantium unde temporibus id
-            iste dolores eius blanditiis sed odit, esse fugiat illum deleniti
-            minus eligendi!
+    <>
+      <BlobRight className="services-blob-right " />
+      <div className="services-body">
+        <div className="service-main text-primary">
+          <h1 className="service-header">Services</h1>
+          <p className="service-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+            cupiditate dolorem adipisci ad ratione iusto fuga placeat, expedita,
+            velit eligendi veniam! Tempore molestiae enim eveniet iusto eius
+            officiis saepe nulla ducimus facilis quos laudantium hic temporibus
+            suscipit, quo inventore assumenda consequuntur libero tenetur magnam
+            dolore.
           </p>
-          <Illustrations />
+          <Illustrations className="service-illustration" />
         </div>
-        <div className="col">
-          <div className="row">
-            <div className="col">
+        <div className="service-cards-section">
+          <div className="cards-row">
+            <div className="cards-col">
               <ServiceCard
-                className="col"
-                CardImage={Maintainence}
-                cardTitle="Web Development"
-              />
-              <ServiceCard
-                className="col"
-                CardImage={Maintainence}
+                CardImage={Responsive}
                 cardTitle="Web Development"
               />
             </div>
-            <div className="col">
+            <div className="cards-col cards-col-2">
               <ServiceCard
-                className="col"
                 CardImage={Maintainence}
-                cardTitle="Web Development"
-              />
-              <ServiceCard
-                className="col"
-                CardImage={Maintainence}
-                cardTitle="Web Development"
+                cardTitle="Web Service"
               />
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <BlobLeft className="services-blob-left" />
+    </>
   )
 }
 
