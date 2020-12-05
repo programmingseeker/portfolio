@@ -9,10 +9,10 @@ import BlobLeft from "../images/blobL.inline.svg"
 const services = () => {
   return (
     <>
-      <BlobRight className="services-blob-right " />
-      <div className="services-body">
-        <div className="service-main text-primary">
-          <h1 className="service-header">Services</h1>
+      <div className="services-body container">
+        <BlobRight className="services-blob-right " />
+        <div className="service-main text-primary col-lg-6 col-md-6 col-sm-12">
+          <h1>Services</h1>
           <p className="service-desc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
             cupiditate dolorem adipisci ad ratione iusto fuga placeat, expedita,
@@ -23,24 +23,18 @@ const services = () => {
           </p>
           <Illustrations className="service-illustration" />
         </div>
-        <div className="service-cards-section">
-          <div className="cards-row">
-            <div className="cards-col">
-              <ServiceCard
-                CardImage={Responsive}
-                cardTitle="Web Development"
-              />
+        <div className="service-cards-section col-lg-6 col-md-6 col-sm-12">
+          <div className="cards-row row">
+            <div className="cards-col col">
+              <ServiceCard CardImage={Responsive} cardTitle="Web Development" />
             </div>
-            <div className="cards-col cards-col-2">
-              <ServiceCard
-                CardImage={Maintainence}
-                cardTitle="Web Service"
-              />
+            <div className="cards-col col cards-col-2">
+              <ServiceCard CardImage={Maintainence} cardTitle="Web Service" />
             </div>
           </div>
         </div>
+        <BlobLeft className="services-blob-left" />
       </div>
-      <BlobLeft className="services-blob-left" />
     </>
   )
 }

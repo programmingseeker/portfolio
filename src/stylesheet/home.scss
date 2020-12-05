@@ -67,6 +67,7 @@ $font-size: 70px;
 
 @media (min-width: 1037px) {
   .bg-home {
+    height: 100vh !important;
     display: flex;
     align-items: center;
     justify-content: center;

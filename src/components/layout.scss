@@ -21,19 +21,21 @@ $primary-light: #28283f;
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: "poppins", serif, sans-serif;
+  font: "poppins", serif, sans-serif !important;
   box-sizing: border-box;
   overflow-y: hidden;
-  background: $primary-dark;
+  background: $primary-dark !important;
 }
 body {
+  background: $primary-dark !important;
+
   margin: 0;
   max-width: 100%;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: poppins, serif;
+  font-family: Poppins !important;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;

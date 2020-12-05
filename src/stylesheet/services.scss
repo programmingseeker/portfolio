@@ -1,34 +1,39 @@
-$blob-height: 90%;
+$blob-height: 60%;
 .services-body {
-  position: absolute;
-  padding-left: 10rem;
-  padding-right: 3rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  height: 80vh;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   .service-main {
     display: flex;
-    flex: 1;
     flex-direction: column;
-
-    .service-desc {
+    z-index: 2;
+    h1 {
+      font-size: $font-size;
+      letter-spacing: -2px;
+    }
+    p {
+      line-height: 24px;
       width: 85%;
-      position: relative;
-      left: 1rem;
+      margin-left: 1rem;
     }
     .service-illustration {
-      height: 17rem;
+      height: 16rem;
       width: auto;
     }
   }
   .service-cards-section {
-    flex: 1;
+    z-index: 2;
     .cards-row {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
       .cards-col {
+        &.cards-col-2 {
+          position: relative;
+          top: 3rem;
+        }
         .service-card {
+          width: 100%;
           box-shadow: 0px 0px 0px rgba(16, 22, 26, 0.2),
             0px 2px 4px rgba(16, 22, 26, 0.4),
             0px 8px 24px rgba(16, 22, 26, 0.4) !important;
@@ -37,10 +42,6 @@ $blob-height: 90%;
           h4 {
             font-size: 1.25rem;
           }
-        }
-        &.cards-col-2 {
-          position: relative;
-          top: 2rem;
         }
       }
     }
@@ -51,32 +52,29 @@ $blob-height: 90%;
   height: 50%;
 }
 .services-blob-right {
+  background-attachment: fixed;
   position: absolute;
-  top: 1rem;
+  top: 0rem;
   right: 0;
   height: $blob-height;
-  z-index: -10;
+  z-index: 1;
 }
 .services-blob-left {
+  background-attachment: fixed;
+
   height: $blob-height;
   position: absolute;
-  bottom: 1rem;
+  bottom: 0rem;
   left: 0;
-  z-index: -10;
+  z-index: 1;
 }
-@media (min-width: 1186px) and(max-width: 1040px) {
-  .services-blob-left {
-    height: $blob-height * 0.75;
-  }
-  .services-blob-right {
-    height: $blob-height * 0.75;
-  }
+@media (min-width: 1040px) {
   .services-body {
-    padding-left: 3rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
+    padding-left: 3rem !important;
+    padding-right: 2rem !important;
+    padding-top: 2rem !important;
     .service-main {
-      .service-desc {
+      p {
         font-size: 0.95rem;
         width: 80%;
       }
@@ -88,17 +86,21 @@ $blob-height: 90%;
 }
 
 @media (min-width: 768px) and(max-width: 1037px) {
+  .service-card {
+    width: 90% !important;
+    margin: 0.5rem 0px;
+  }
   .services-blob-left {
-    height: $blob-height * 0.6;
+    height: $blob-height * 0.8;
   }
   .services-blob-right {
-    height: $blob-height * 0.6;
+    height: $blob-height * 0.8;
   }
   .services-body {
     padding-left: 2rem;
     padding-right: 1rem;
     .service-main {
-      .service-desc {
+      p {
         position: relative;
         left: 0rem;
         font-size: 1rem;
@@ -112,19 +114,24 @@ $blob-height: 90%;
 }
 
 @media (max-width: 768px) {
+  .cards-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+  }
   .services-blob-left {
-    height: $blob-height * 0.4;
+    height: $blob-height * 0.6;
   }
   .services-blob-right {
-    height: $blob-height * 0.4;
+    height: $blob-height * 0.6;
   }
   .services-body {
-    margin-top: 2rem;
     padding-left: 1rem;
     padding-right: 0.75rem;
     padding-top: 1rem;
     .service-main {
-      .service-desc {
+      p {
         font-size: 0.95rem;
         width: 95%;
       }
@@ -132,18 +139,19 @@ $blob-height: 90%;
         display: none;
       }
     }
-    .service-cards-section {
-      .cards-row {
-        .cards-col {
-          .service-card {
-            h4 {
-              font-size: 1rem;
-            }
-          }
-          &.cards-col-2 {
-            position: relative;
-            top: 0;
-          }
+
+    .cards-col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &.cards-col-2 {
+        position: relative;
+        top: 3rem;
+      }
+      .service-card {
+        width: 70% !important;
+        h4 {
+          font-size: 1rem;
         }
       }
     }
