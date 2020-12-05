@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Icon from "../images/cakeop.inline.svg"
+import Arrow from "../images/arrow-icon.inline.svg"
 function works() {
   const Image = () => {
     const data = useStaticQuery(graphql`
@@ -27,25 +28,31 @@ function works() {
     <>
       <div className="bg-work">
         <Layout>
-          <div class="work-head">
+          <div className="work-head">
             <span className="text-pink mr-1">Our</span>Works
           </div>
-          <div class="container">
-            <div class="cards">
-              <div class="card-item">
+          <div className="container">
+            <div className="cards">
+              <div className="card-item">
                 <div className="card-image-container">
-                  <Image class="card-image"></Image>
+                  <Image className="card-image"></Image>
                 </div>
-                <div class="card-info">
-                  <div class="card-title">
+                <div className="card-info">
+                  <div className="card-title">
                     <div className="card-title-icon-cover">
-                      <Icon class="card-title-icon" />
+                      <Icon className="card-title-icon" />
                     </div>
                     <h2 className="card-title-text">Cakeop</h2>
                   </div>
-                  <div class="card-button ">
-                    <h3 class="card-btn-txt">Go to the site</h3>
-                  </div>
+                  <a
+                    href="https://cakeop.herokuapp.com/"
+                    target="_blank"
+                    to="cakeop.herokuapp.com"
+                    className="card-button "
+                  >
+                    <h3 className="card-btn-txt">Go to the site</h3>
+                    <Arrow />
+                  </a>
                 </div>
               </div>
             </div>
