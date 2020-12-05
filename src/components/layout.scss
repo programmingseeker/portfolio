@@ -1,9 +1,14 @@
 $primary: #fafafa;
 $pink: #e94560;
 $primary-dark: #1a1a2e;
+$primary-light: #28283F;
 
 .primary-bg {
   background-color: $primary-dark;
+}
+
+.primary-light-bg{
+  background-color: $primary-light;
 }
 
 .text-pink {
