@@ -48,7 +48,6 @@
       background-color: $primary-dark;
       display: flex;
       flex-direction: column;
-      height: 57vh;
       width: 100%;
       border-radius: 6px;
       box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
@@ -142,9 +141,6 @@
 @media (min-width: 1037px) {
   .card-btn-txt {
     display: inline !important;
-  }
-  .card-item {
-    height: 70vh !important;
   }
   .card-button {
     width: 25% !important;

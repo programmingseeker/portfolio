@@ -47,6 +47,7 @@ function works() {
                   <a
                     href="https://cakeop.herokuapp.com/"
                     target="_blank"
+                    rel="noreferrer"
                     to="cakeop.herokuapp.com"
                     className="card-button "
                   >

@@ -1,13 +1,13 @@
 $primary: #fafafa;
 $pink: #e94560;
 $primary-dark: #1a1a2e;
-$primary-light: #28283F;
+$primary-light: #28283f;
 
 .primary-bg {
   background-color: $primary-dark;
 }
 
-.primary-light-bg{
+.primary-light-bg {
   background-color: $primary-light;
 }
 
@@ -43,5 +43,6 @@ body {
 @import "./../stylesheet/home";
 @import "./../stylesheet/work";
 @import "./../stylesheet/services";
+@import "./../stylesheet/about";
 
 @import "bootstrap/scss/bootstrap";

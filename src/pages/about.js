@@ -1,11 +1,31 @@
 import React from "react"
 import Layout from "../components/layout"
+import Humans from "../images/humans.inline.svg"
 function about() {
   return (
     <>
-      <Layout>
-        <h1>about page</h1>
-      </Layout>
+      <div className="primary-bg bg-about">
+        <Layout>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6 col-md-6 col-sm-12 ">
+                <Humans className="humans-about-us" />
+              </div>
+              <div className="col-lg-6 col-md-6 col-sm-12 ">
+                <h1>
+                  About<span className="text-pink">Us</span>
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aliquid, commodi doloremque, fugiat illum magni minus nisi
+                  nulla numquam obcaecati placeat quia, repellat tempore
+                  voluptatum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Layout>
+      </div>
     </>
   )
 }

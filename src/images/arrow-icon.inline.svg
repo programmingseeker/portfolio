@@ -1,7 +1,7 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="24 / arrows / chevron-right">
 <g id="icon" filter="url(#filter0_d)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M14.5857 12L7.29285 4.70706L8.70706 3.29285L17.4142 12L8.70706 20.7071L7.29285 19.2928L14.5857 12Z" fill="url(#paint0_linear)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.5857 12L7.29285 4.70706L8.70706 3.29285L17.4142 12L8.70706 20.7071L7.29285 19.2928L14.5857 12Z" fill="url(#hijklmnop)"/>
 </g>
 </g>
 <defs>
@@ -14,7 +14,7 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
 </filter>
-<linearGradient id="paint0_linear" x1="17.4142" y1="20.707" x2="-8.6552" y2="18.4233" gradientUnits="userSpaceOnUse">
+<linearGradient id="hijklmnop" x1="17.4142" y1="20.707" x2="-8.6552" y2="18.4233" gradientUnits="userSpaceOnUse">
 <stop stop-color="white"/>
 </linearGradient>
 </defs>
