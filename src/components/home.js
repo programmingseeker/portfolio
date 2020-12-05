@@ -27,7 +27,7 @@ function home() {
 
   return (
     <>
-      <div className="container ">
+      <div className="container-home ">
         <div className="row banner ">
           <div className="col-lg-6 col-md-6 col-sm-12 banner-text-div">
             <h1 className="banner-text">

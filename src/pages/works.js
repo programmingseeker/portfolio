@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Icon from "../images/cakeop.inline.svg"
+import Arrow from "../images/arrow-icon.inline.svg"
 function works() {
   const Image = () => {
     const data = useStaticQuery(graphql`
@@ -50,6 +51,7 @@ function works() {
                     className="card-button "
                   >
                     <h3 className="card-btn-txt">Go to the site</h3>
+                    <Arrow />
                   </a>
                 </div>
               </div>
