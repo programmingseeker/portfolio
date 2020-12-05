@@ -28,7 +28,7 @@ html {
 }
 body {
   background: $primary-dark !important;
-
+  overflow: hidden;
   margin: 0;
   max-width: 100%;
   overflow-x: hidden;

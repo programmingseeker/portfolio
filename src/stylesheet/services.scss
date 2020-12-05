@@ -1,5 +1,7 @@
 $blob-height: 60%;
 .services-body {
+  width: 100vw !important;
+  overflow: hidden;
   height: 80vh;
   display: flex;
   flex-wrap: wrap;
@@ -52,21 +54,28 @@ $blob-height: 60%;
   height: 50%;
 }
 .services-blob-right {
-  background-attachment: fixed;
   position: absolute;
-  top: 0rem;
+  top: 0;
   right: 0;
   height: $blob-height;
   z-index: 1;
+  // animation: blobRotate 35s linear infinite;
 }
 .services-blob-left {
-  background-attachment: fixed;
-
   height: $blob-height;
   position: absolute;
-  bottom: 0rem;
+  bottom: 0;
   left: 0;
   z-index: 1;
+  // animation: blobRotate 35s linear infinite;
+}
+@keyframes blobRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 @media (min-width: 1040px) {
   .services-body {
