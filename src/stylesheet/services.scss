@@ -2,7 +2,7 @@ $blob-height: 60%;
 .services-body {
   width: 100vw !important;
   overflow: hidden;
-  height: 80vh;
+  height: 93vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -22,6 +22,7 @@ $blob-height: 60%;
     .service-illustration {
       height: 16rem;
       width: auto;
+      z-index: 15;
     }
   }
   .service-cards-section {
@@ -84,8 +85,8 @@ $blob-height: 60%;
     padding-top: 2rem !important;
     .service-main {
       p {
-        font-size: 0.95rem;
-        width: 80%;
+        font-size: 0.85rem;
+        width: 90%;
       }
       .service-illustration {
         height: 14rem;
@@ -113,11 +114,21 @@ $blob-height: 60%;
         position: relative;
         left: 0rem;
         font-size: 1rem;
-        width: 90%;
+        width: 100%;
       }
       .service-illustration {
-        height: 12rem;
+        height: 11rem;
       }
+    }
+  }
+}
+
+@media (max-width: 1000px){
+  .services-body{
+    padding-top: -1rem !important;
+    .service-illustration {
+      display: none;
+      margin-bottom: 2rem;
     }
   }
 }
