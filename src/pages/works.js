@@ -31,7 +31,7 @@ function works() {
           <div className="work-head">
             <span className="text-pink mr-1">Our</span>Works
           </div>
-          <div className="container">
+          <div className="work-container container">
             <div className="cards">
               <div className="card-item">
                 <div className="card-image-container">
