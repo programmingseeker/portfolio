@@ -1,9 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import Icon from "../images/cakeop.inline.svg"
 import Arrow from "../images/arrow-icon.inline.svg"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+
+// import Image from "../components/image"
+
 function works() {
   const Image = () => {
     const data = useStaticQuery(graphql`

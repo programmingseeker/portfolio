@@ -1,29 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
 import Humans from "../images/humans.inline.svg"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import Profile from "../components/profileCard"
+
 function about() {
-  const Image = () => {
-    const data = useStaticQuery(graphql`
-      query {
-        placeholderImage: file(relativePath: { eq: "macbook.inline.png" }) {
-          childImageSharp {
-            fixed(width: 1550, height: 1560) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-      }
-    `)
-
-    if (!data?.placeholderImage?.childImageSharp?.fixed) {
-      return <div>Picture not found</div>
-    }
-
-    return <Img fixed={data.placeholderImage.childImageSharp.fixed} />
-  }
-
   return (
     <>
       <div className="primary-bg bg-about">
@@ -45,7 +25,10 @@ function about() {
                     voluptatum.
                   </p>
                 </div>
-                <div className="row"></div>
+                <div className="row ">
+                  <Profile />
+                  <Profile />
+                </div>
               </div>
             </div>
           </div>

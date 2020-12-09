@@ -6,10 +6,6 @@ $font-size: 70px;
   height: 93vh;
   color: white !important;
   width: 100%;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 .container-home {
   height: 80vh;
@@ -55,7 +51,7 @@ $font-size: 70px;
       align-items: center;
       font-weight: 600;
       font-size: $font-size !important;
-      line-height: 55px;
+      line-height: 75px;
       /* or 104% */
       letter-spacing: -3px;
     }
@@ -80,7 +76,7 @@ $font-size: 70px;
     margin-top: 0rem;
     .banner-text {
       font-size: $font-size + 21 !important;
-      line-height: 85px;
+      line-height: 93px;
       /* or 104% */
       letter-spacing: -6px;
     }
