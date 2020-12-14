@@ -85,7 +85,6 @@ function Contact() {
               <span className="circle two"></span>
 
               <form className="form-contact-text" autocomplete="off">
-                <h3 className="title-contact">Contact Developers</h3>
                 <div className={`input-container ${focus ? "focus" : null}`}>
                   <input
                     onFocus={() => {
