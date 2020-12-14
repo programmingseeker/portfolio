@@ -84,7 +84,7 @@
         }
         .card-title-text {
           font-weight: 600;
-          font-size: 35px;
+          font-size: 25px;
         }
       }
       .card-button {
@@ -123,6 +123,9 @@
 }
 
 @media (min-width: 1037px) {
+  .card-title-text {
+    font-size: 35px !important;
+  }
   .cards {
     width: 65% !important;
   }
@@ -153,8 +156,8 @@
     width: 25% !important;
   }
 }
-@media (max-height: 700px) {
-  .work-container {
-    height: 120% !important;
+@media (max-width: 700px) {
+  .card-image-container {
+    height: 50vh !important;
   }
 }
