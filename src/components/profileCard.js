@@ -97,8 +97,8 @@ function ProfileCard() {
                   <i className="fas fa-camera fa-2x"></i>
                 </div>
               </div>
-              <h3 className="name">John Doe</h3>
-              <h3 className="sub-name">@J_Doe</h3>
+              <h3 className="name">Gaurav S Rao</h3>
+              <h3 className="sub-name">@gauravsrao</h3>
             </div>
           </div>
 

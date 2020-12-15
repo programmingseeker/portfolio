@@ -28,10 +28,8 @@ function Contact() {
             <div className="contact-info ">
               <h3 className="title-contact">Contact Information</h3>
               <p className="text-contact">
-                <span className="desc-small">
-                  Fill up the form and out Team
-                </span>{" "}
-                Will get back to you within 24 hours
+                Fill up the form and out Team Will get back to you within 24
+                hours
               </p>
               <div className="info">
                 <div className="information d-flex align-items-center ">
@@ -46,7 +44,10 @@ function Contact() {
                   <FontAwesomeIcon
                     icon={faEnvelope}
                     className=" mr-2 info-icon"
-                    style={{ fontSize: "25px" }}
+                    style={{
+                      fontSize: "25px",
+                      color: "linear-gradient(89.94deg, #0077b6 20%, #00b4d8)",
+                    }}
                   ></FontAwesomeIcon>
                   <p>programmingseeker@gmail.com</p>
                 </div>
@@ -56,7 +57,7 @@ function Contact() {
                     className="mr-2 info-icon"
                     style={{ fontSize: "25px" }}
                   ></FontAwesomeIcon>
-                  <p>+91 9731362928/</p>
+                  <p>+91 9731362928/7019105904</p>
                 </div>
               </div>
               <div className="social-media">
