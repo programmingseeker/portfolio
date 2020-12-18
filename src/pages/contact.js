@@ -35,7 +35,7 @@ function Contact() {
                 <div className="information d-flex align-items-center ">
                   <FontAwesomeIcon
                     icon={faMapMarkedAlt}
-                    className="mr-2 info-icon"
+                    className="mr-2"
                     style={{ fontSize: "25px" }}
                   ></FontAwesomeIcon>
                   <p> Bangalore India 560079</p>
@@ -43,7 +43,7 @@ function Contact() {
                 <div className="information d-flex align-items-center ">
                   <FontAwesomeIcon
                     icon={faEnvelope}
-                    className=" mr-2 info-icon"
+                    className=" mr-2"
                     style={{
                       fontSize: "25px",
                       color: "linear-gradient(89.94deg, #0077b6 20%, #00b4d8)",
@@ -54,7 +54,7 @@ function Contact() {
                 <div className="information d-flex align-items-center ">
                   <FontAwesomeIcon
                     icon={faPhoneAlt}
-                    className="mr-2 info-icon"
+                    className="mr-2"
                     style={{ fontSize: "25px" }}
                   ></FontAwesomeIcon>
                   <p>+91 9731362928/7019105904</p>

@@ -15,10 +15,10 @@ function about() {
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 ">
                 <div className="row">
-                  <h1>
+                  <h1 className="aboutHeader">
                     About<span className="text-pink">Us</span>
                   </h1>
-                  <p>
+                  <p className="aboutParagraph">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Aliquid, commodi doloremque, fugiat illum magni minus nisi
                     nulla numquam obcaecati placeat quia, repellat tempore
