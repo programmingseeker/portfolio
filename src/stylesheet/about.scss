@@ -13,7 +13,7 @@
     }
     .aboutHeader {
       font-weight: 600;
-      font-size: $font-size - 8;
+      font-size: $font-size - 13;
       letter-spacing: -3px;
     }
     .aboutParagraph {
@@ -32,6 +32,9 @@
     .about-container {
       height: 93vh !important;
       align-items: center;
+      .about-header {
+        font-size: $font-size - 8;
+      }
     }
   }
 }
@@ -39,6 +42,9 @@
   .bg-about {
     .about-container {
       align-items: center;
+      .about-header {
+        font-size: $font-size - 10;
+      }
     }
   }
   .humans-about-us {
@@ -75,35 +81,12 @@
   }
 }
 
-// .profile-card-container {
-//   display: flex;
-//   // justify-content: center;
-//   // align-items: center;
-//   min-height: 60vh;
-//   .profile-card {
-//     margin: 0 10px;
-//     overflow: hidden;
-//     background: $primary-light;
-//     box-shadow: 36px 12px 64px rgba(20, 20, 35, 0.7),
-//       -12px -20px 56px rgba(232, 237, 243, 0.05),
-//       inset -16px -6px 80px rgba(248, 249, 249, 0.03);
-//     border-radius: 24px;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     .profile-photo {
-//       border-radius: 50% !important;
-//     }
-//   }
-// }
-
 .profile-photo {
   border-radius: 50% !important;
 }
 .profileCard {
-  max-width: 340px;
-  min-width: 250px;
+  overflow: hidden;
+  width: 250px;
   margin: auto;
   position: relative;
   z-index: 1;
@@ -119,14 +102,10 @@
 }
 
 .profileCard[data-state="#about"] {
-  height: 450px;
+  height: 380px;
   .card-main {
     padding-top: 0;
   }
-}
-
-.profileCard[data-state="#contact"] {
-  height: 450px;
 }
 
 .card.is-active {
@@ -318,52 +297,4 @@
   100% {
     opacity: 1;
   }
-}
-.card-contact-wrapper {
-  margin-top: 20px;
-}
-
-.card-contact {
-  display: flex;
-  align-items: center;
-  font-size: 13px;
-  color: #6f6f7b;
-  font-family: "DM Sans", sans-serif;
-  line-height: 1.6;
-  cursor: pointer;
-
-  & + & {
-    margin-top: 16px;
-  }
-
-  svg {
-    flex-shrink: 0;
-    width: 30px;
-    min-height: 34px;
-    margin-right: 12px;
-    transition: 0.3s;
-    padding-right: 12px;
-    border-right: 1px solid #dfe2ec;
-  }
-}
-
-.contact-me {
-  border: 0;
-  outline: none;
-  background: linear-gradient(
-    to right,
-    rgba(83, 200, 239, 0.8) 0%,
-    rgba(81, 106, 204, 0.8) 96%
-  );
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-  color: #fff;
-  padding: 12px 16px;
-  width: 100%;
-  border-radius: 5px;
-  margin-top: 25px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-  font-family: "Jost", sans-serif;
-  transition: 0.3s;
 }

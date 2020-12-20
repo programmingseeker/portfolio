@@ -18,7 +18,6 @@ function Contact() {
   const [email, setemail] = useState("")
   const [phone, setphone] = useState(null)
   const [message, setmessage] = useState("")
-  const [alert, setalert] = useState(false)
   return (
     <>
       <Layout>
