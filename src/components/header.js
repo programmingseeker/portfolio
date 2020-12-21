@@ -1,21 +1,16 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { useState, useEffect } from "react"
+import React from "react"
 import Logo from "../images/logo.inline.svg"
 import { useLocation } from "@reach/router"
+import { useMediaQuery } from "react-responsive"
 function Header({ siteTitle }) {
   const location = useLocation()
   const path = location.pathname ? location.pathname : ""
-  const [width, setWidth] = useState(window.innerWidth)
-  useEffect(() => {
-    if (typeof window === "undefined") return
-    const handleResize = () => setWidth(window.innerWidth)
-    window.addEventListener("resize", handleResize)
-    return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-  }, [width])
 
+  const width = useMediaQuery({
+    query: "(min-width: 1037px)",
+  })
   const Title = () => {
     return (
       <Link to="/" className="title-link ">
@@ -26,9 +21,9 @@ function Header({ siteTitle }) {
   }
   return (
     <>
-      {width <= 1037 ? <Title /> : ""}
+      {!width ? <Title /> : ""}
       <div className="header">
-        {width >= 1037 ? <Title /> : ""}
+        {width ? <Title /> : ""}
         <Link to="/" className={`nav-link ${path === "/" ? "active" : ""}`}>
           Home
         </Link>
