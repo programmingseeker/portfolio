@@ -90,8 +90,8 @@ function Contact() {
                     onFocus={() => {
                       setFocus("focus")
                     }}
-                    onBlur={() => {
-                      setFocus(null)
+                    onBlur={e => {
+                      e.target.value === "" ? setFocus(null) : setFocus("focus")
                     }}
                     type="text-contact"
                     name="name"
@@ -109,8 +109,8 @@ function Contact() {
                     onFocus={() => {
                       setFocus("focus")
                     }}
-                    onBlur={() => {
-                      setFocus(null)
+                    onBlur={e => {
+                      e.target.value === "" ? setFocus(null) : setFocus("focus")
                     }}
                     type="email"
                     name="email"
@@ -128,8 +128,8 @@ function Contact() {
                     onFocus={() => {
                       setFocus("focus")
                     }}
-                    onBlur={() => {
-                      setFocus(null)
+                    onBlur={e => {
+                      e.target.value === "" ? setFocus(null) : setFocus("focus")
                     }}
                     type="numeric"
                     name="phone"
@@ -154,8 +154,8 @@ function Contact() {
                     onFocus={() => {
                       setFocus("focus")
                     }}
-                    onBlur={() => {
-                      setFocus(null)
+                    onBlur={e => {
+                      e.target.value === "" ? setFocus(null) : setFocus("focus")
                     }}
                     onChange={e => {
                       setmessage(e.target.value)
