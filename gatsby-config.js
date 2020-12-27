@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `DevStop`,
+    title: `AllKeyTek`,
     description: `Your one stop solution to all that you need to get a website built for yourself`,
     author: `@programmingseeker`,
   },
