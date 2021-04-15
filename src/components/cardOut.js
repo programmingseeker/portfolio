@@ -2,29 +2,10 @@ import React, { useState } from "react"
 import Profile from "../components/profileCard"
 import { useMediaQuery } from "react-responsive"
 import useInterval from "../utils/useInterval"
+import data from "../data/data.json"
+
 function CardOut() {
   const [count, setCount] = useState(0)
-  const data = [
-    {
-      name: "Gaurav S Rao",
-      about:
-        "commodi doloremque, fugiat illum magni minus nisinulla numquam obcaecati placeat ",
-      linkedin: "https://linkedin.com/in/gaurav-s-rao-257a911b1",
-      twitter: "https://twitter.com/gaurav_s_rao",
-      instagram: "https://www.instagram.com/gaurav_s_rao/",
-      facebook: "",
-    },
-    {
-      name: "Krtin U Shet",
-      about:
-        "commodi doloremque, fugiat illum magni minus nisinulla numquam obcaecati adgadjhgkajd ",
-      linkedin: "linkedin.com/",
-      instagram: "https://www.instagram.com/",
-      facebook: "",
-      twitter: "",
-    },
-  ]
-
   const [cardData, setCardData] = useState({ ...data[0] })
 
   const cardClickHandler = () => {
@@ -55,6 +36,7 @@ function CardOut() {
               linkedin={info.linkedin}
               name={info.name}
               about={info.about}
+              image={info.image}
             />
           )
         })
@@ -68,6 +50,7 @@ function CardOut() {
           linkedin={cardData.linkedin}
           name={cardData.name}
           about={cardData.about}
+          image={cardData.image}
         />
       )}
     </>

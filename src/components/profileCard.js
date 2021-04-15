@@ -2,19 +2,27 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-function ProfileCard({ name, about, facebook, instagram, twitter, linkedin }) {
+function ProfileCard({
+  name,
+  about,
+  facebook,
+  instagram,
+  twitter,
+  linkedin,
+  image,
+}) {
   // const [active, setActive] = useState(false)
   const Image = ({ customer }) => {
     const data = useStaticQuery(graphql`
       query {
-        customer1: file(relativePath: { eq: "customer-profile1.jpg" }) {
+        customer1: file(relativePath: { eq: "profile1.jpg" }) {
           childImageSharp {
             fixed(width: 100, height: 100) {
               ...GatsbyImageSharpFixed
             }
           }
         }
-        customer2: file(relativePath: { eq: "customer-profile2.jpg" }) {
+        customer2: file(relativePath: { eq: "profile2.jpg" }) {
           childImageSharp {
             fixed(width: 100, height: 100) {
               ...GatsbyImageSharpFixed
@@ -52,7 +60,7 @@ function ProfileCard({ name, about, facebook, instagram, twitter, linkedin }) {
       <div className="profileCard" data-state="#about">
         <div className="card-header">
           <div className="card-avatar">
-            <Image customer={1} alt="avatar" className="profile-photo" />
+            <Image customer={image} alt="avatar" className="profile-photo" />
           </div>
           <h1 className="card-fullname">{name}</h1>
           <h2 className="card-jobtitle">Full Stack Developer</h2>
