@@ -9,7 +9,7 @@ function IndexPage() {
     <>
       <div className="bg-home">
         <Layout>
-          <SEO title="DevStop" />
+          <SEO title="4Bit" />
           <Home />
         </Layout>
       </div>
